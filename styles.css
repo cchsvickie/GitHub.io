@@ -47,7 +47,7 @@ blockquote p { margin: 0 0 10px; }
 cite { display: block; text-align: right; font-weight: bold; }
 form { display: flex; flex-direction: column; max-width: 500px; margin: 20px auto; }
 input, textarea, button { margin: 10px 0; padding: 12px; border: 1px solid #ddd; border-radius: 4px; }
-button { background: #4CAF50; color: white; cursor: pointer; font-weight: bold; }
+button { background: #536c7c; color: white; cursor: pointer; font-weight: bold; }
 footer { background: #333; color: white; text-align: center; padding: 20px; }
 @media (max-width: 768px) { .hero { padding: 140px 20px; } .hero h1 { font-size: 3rem; } }
 ```
