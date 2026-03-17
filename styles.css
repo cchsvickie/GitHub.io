@@ -143,4 +143,61 @@ button {
 .content li {
     margin-bottom: 12px;
 }
+.boarding-section {
+    padding: 85px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.boarding-section h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.boarding-layout {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.boarding-list {
+    flex: 1;
+}
+
+.boarding-list ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.boarding-list li {
+    margin-bottom: 18px;
+    font-size: 1.08rem;
+}
+
+.boarding-photo {
+    flex: 1;
+    max-width: 420px;
+}
+
+.boarding-photo img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Mobile: stack photo below list */
+@media (max-width: 768px) {
+    .boarding-layout {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .boarding-photo {
+        max-width: 100%;
+    }
+}
 ```
