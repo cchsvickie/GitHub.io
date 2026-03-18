@@ -5,6 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staying at IMR – Iron Mills Ranch</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Styles for the new vertical layout with 2 photos per item -->
+    <style>
+        .staying-section {
+            padding: 85px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .staying-section h2 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.2rem;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .feature-row {
+            display: flex;
+            gap: 60px;
+            align-items: flex-start;
+            margin-bottom: 70px;
+            flex-wrap: wrap;
+        }
+        .feature-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .feature-text strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.15rem;
+        }
+        .feature-images {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            min-width: 300px;
+        }
+        .feature-images img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        /* Mobile: stack text on top of images */
+        @media (max-width: 768px) {
+            .feature-row {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,27 +72,72 @@
         </nav>
     </header>
 
-    <section>
+    <section class="staying-section">
         <h2>Staying at IMR</h2>
         <p>Your horse’s home away from home. Here’s what you can expect when boarding with us:</p>
-        
-        <ul>
-            <li><strong>Twice-daily feeding & care</strong> – Fresh hay, grain (if needed), and daily health checks.</li>
-            <li><strong>Full facility access</strong> – 130 × 70 arena, round pen, wash rack, and grassy pastures.</li>
-            <li><strong>Turnout & shelters</strong> – Daily turnout in group or individual outdoor shelters.</li>
-            <li><strong>Trail riding</strong> – Miles of beautiful trails start just a half-mile away.</li>
-            <li><strong>Trailer parking</strong> – Available for an extra fee upon request.</li>
-        </ul>
-        
+
+        <!-- Feature 1 -->
+        <div class="feature-row">
+            <div class="feature-text">
+                <strong>Twice-daily feeding & care</strong> – Fresh hay, grain (if needed), and daily health checks.
+            </div>
+            <div class="feature-images">
+                <img src="feeding1.jpg" alt="Twice-daily feeding">
+                <img src="feeding2.jpg" alt="Daily care">
+            </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-row">
+            <div class="feature-text">
+                <strong>Full facility access</strong> – 130 × 70 arena, round pen, wash rack, and grassy pastures.
+            </div>
+            <div class="feature-images">
+                <img src="facility1.jpg" alt="Arena access">
+                <img src="facility2.jpg" alt="Pastures">
+            </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-row">
+            <div class="feature-text">
+                <strong>Turnout & shelters</strong> – Daily turnout in group or individual outdoor shelters.
+            </div>
+            <div class="feature-images">
+                <img src="turnout1.jpg" alt="Turnout">
+                <img src="turnout2.jpg" alt="Shelters">
+            </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-row">
+            <div class="feature-text">
+                <strong>Trail riding</strong> – Miles of beautiful trails start just a half-mile away.
+            </div>
+            <div class="feature-images">
+                <img src="trails1.jpg" alt="Trail riding">
+                <img src="trails2.jpg" alt="Nearby trails">
+            </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-row">
+            <div class="feature-text">
+                <strong>Trailer parking</strong> – Available for an extra fee upon request.
+            </div>
+            <div class="feature-images">
+                <img src="parking1.jpg" alt="Trailer parking">
+                <img src="parking2.jpg" alt="Parking area">
+            </div>
+        </div>
+
         <p>We keep the ranch quiet and peaceful so both horses and owners can relax. New boarders receive a welcome packet with all details.</p>
     </section>
 
-<footer class="footer">
-    <img src="footer-logo.png" alt="Iron Mills Ranch Logo">
-    <p><strong>Tel: 714-488-8550</strong> For Boarding.</p>
-    <p>We are a 20 acre family run boarding facility located in Coupeville WA.</p>
-</footer>
-
+    <footer class="footer">
+        <img src="footer-logo.png" alt="Iron Mills Ranch Logo">
+        <p><strong>Tel: 714-488-8550</strong> For Boarding.</p>
+        <p>We are a 20 acre family run boarding facility located in Coupeville WA.</p>
+    </footer>
 </body>
 </html>
-```
