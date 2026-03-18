@@ -202,4 +202,20 @@ button {
         max-width: 100%;
     }
 }
-```
+/* Mobile menu fix — no more horizontal scrolling on iPhone */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+    ul {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 15px;
+    }
+    ul li a {
+        font-size: 1.05rem;
+        padding: 6px 0;
+    }
+}
