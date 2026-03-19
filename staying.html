@@ -6,7 +6,6 @@
     <title>Staying at IMR – Iron Mills Ranch</title>
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Styles for the vertical layout with 2 photos per item -->
     <style>
         .staying-section {
             padding: 85px 20px;
@@ -46,6 +45,8 @@
         }
         .feature-images img {
             width: 100%;
+            height: 230px;           /* ← this makes ALL photos the same size */
+            object-fit: cover;       /* ← this crops nicely without stretching */
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
@@ -77,7 +78,7 @@
         <h2>Staying at IMR</h2>
         <p>Your horse’s home away from home. Here’s what you can expect when boarding with us:</p>
 
-        <!-- All features (unchanged) -->
+        <!-- Feature 1 -->
         <div class="feature-row">
             <div class="feature-text">
                 <strong>Twice-daily feeding & care</strong> – Fresh hay, grain (if needed), and daily health checks.
@@ -88,6 +89,7 @@
             </div>
         </div>
 
+        <!-- Feature 2 -->
         <div class="feature-row">
             <div class="feature-text">
                 <strong>Full facility access</strong> – 130 × 70 arena, round pen, wash rack, and grassy pastures.
@@ -98,6 +100,7 @@
             </div>
         </div>
 
+        <!-- Feature 3 -->
         <div class="feature-row">
             <div class="feature-text">
                 <strong>Turnout & shelters</strong> – Daily turnout in group or individual outdoor shelters.
@@ -108,16 +111,18 @@
             </div>
         </div>
 
-        <div class="feature-row"
+        <!-- Feature 4 - Trail riding (now same size) -->
+        <div class="feature-row">
             <div class="feature-text">
                 <strong>Trail riding</strong> – Miles of beautiful trails start just a half-mile away.
             </div>
             <div class="feature-images">
                 <img src="ranch-trails1.jpg" alt="Trail riding">
-                <img src="ranch-trails2.jpeg" alt="Nearby trails">
+                <img src="ranch-trails2.jpg" alt="Nearby trails">
             </div>
         </div>
 
+        <!-- Feature 5 -->
         <div class="feature-row">
             <div class="feature-text">
                 <strong>Trailer parking</strong> – Available for an extra fee upon request.
@@ -128,10 +133,7 @@
             </div>
         </div>
 
-        <!-- This paragraph is now inside .content so it matches About page exactly -->
-        <section class="content">
-            <p>We keep the ranch quiet and peaceful so both horses and owners can relax. New boarders receive a welcome packet with all details.</p>
-        </section>
+        <p>We keep the ranch quiet and peaceful so both horses and owners can relax. New boarders receive a welcome packet with all details.</p>
     </section>
 
     <footer class="footer">
