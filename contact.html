@@ -24,7 +24,7 @@
 
     <section class="content">
         <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
+        <form action="https://formspree.io/f/mdawjnky" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <input type="text" name="subject" placeholder="Subject" required>
@@ -40,5 +40,18 @@
         <p><strong>Tel: 714-488-8550</strong> For Boarding.</p>
         <p>We are a 20 acre family run boarding facility located in Coupeville WA.</p>
     </footer>
+<!-- Simple script to show the success message -->
+    <script>
+        const form = document.getElementById('contact-form');
+        const success = document.getElementById('success-message');
+
+        form.addEventListener('submit', function() {
+            // Show success message after Formspree submits
+            setTimeout(() => {
+                form.style.display = 'none';
+                success.style.display = 'block';
+            }, 800);
+        });
+    </script>
 </body>
 </html>
