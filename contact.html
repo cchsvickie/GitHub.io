@@ -25,10 +25,13 @@
     <section class="content">
         <h2>Contact Us</h2>
 
-        <!-- Success message (hidden until submitted) -->
-        <div id="success-message" style="display: none; background: #d4edda; color: #155724; padding: 25px; border-radius: 8px; margin: 30px 0; text-align: center;">
+        <!-- SUCCESS MESSAGE — THIS IS THE ONE YOU CAN EDIT -->
+        <div id="success-message" style="display: none; background: #d4edda; color: #155724; padding: 30px; border-radius: 8px; margin: 30px 0; text-align: center;">
             <h3>Thank You!</h3>
             <p>Your message has been received. We will get back to you as soon as possible about boarding at Iron Mills Ranch.</p>
+            <button onclick="resetForm()" style="margin-top: 15px; padding: 10px 20px; background: #222; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                Send Another Message
+            </button>
         </div>
 
         <form id="contact-form" action="https://formspree.io/f/mdawjnky" method="POST">
@@ -39,7 +42,7 @@
             <button type="submit">Send Message</button>
         </form>
 
-        <p>Coupeville, WA | 714-488-8550 | dougdmills@gmail.com</p>
+         <p>Coupeville, WA | 714-488-8550 | dougdmills@gmail.com</p>
     </section>
 
     <footer class="footer">
@@ -48,7 +51,6 @@
         <p>We are a 20 acre family run boarding facility located in Coupeville WA.</p>
     </footer>
 
-    <!-- Simple script to show the success message -->
     <script>
         const form = document.getElementById('contact-form');
         const success = document.getElementById('success-message');
