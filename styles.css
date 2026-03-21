@@ -219,3 +219,25 @@ button {
         padding: 6px 0;
     }
 }
+.featured-horse {
+    position: relative;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+.featured-horse img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+.overlay-text {
+    position: absolute;
+    bottom: 30px;           /* sits right on the grass */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    font-size: 1.35rem;
+    padding: 0 20px;
+    font-weight: 500;
+}
