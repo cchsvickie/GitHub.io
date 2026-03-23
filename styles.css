@@ -235,7 +235,9 @@ button {
 .header-subtitle {
     font-family: 'Great Vibes', cursive;
     font-size: 1.65rem;
-    text-align: center;
-    margin: 12px 0 0 0;
+    text-align: left;           /* ← changed from center */
+    margin: 12px auto 0;
     color: #222222;
+    max-width: 1100px;
+    padding-left: 20px;         /* aligns nicely under the logo */
 }
