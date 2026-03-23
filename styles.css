@@ -30,8 +30,8 @@ nav {
     color: #222222;
     text-align: left;
     max-width: 950px;
-    margin: 6px auto 0;
-    /*margin: 0 auto;*/
+    /*margin: 6px auto 0;*/
+    margin: 0 auto;
 }
 ul { 
     list-style: none; 
@@ -242,5 +242,5 @@ button {
     margin: 12px auto 0;
     color: #222222;
     max-width: 1100px;
-    /*padding-left: 20px;         aligns nicely under the logo */
+    padding-left: 20px        aligns nicely under the logo */
 }
