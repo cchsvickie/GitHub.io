@@ -46,7 +46,7 @@ ul li a {
 }
 .hero {
     text-align: center;
-    padding: 160px 20px 90px;
+    padding: 80px 20px 40px;   /* reduced top & bottom padding */
     background: #ffffff;
 }
 .hero img.monogram {
@@ -237,9 +237,9 @@ button {
 .header-subtitle {
     font-family: 'Great Vibes', cursive;
     font-size: 1.65rem;
-    text-align: left;           /* ← changed from center */
-    margin: 12px auto 0;
+    text-align: left;
+    margin: 8px 0 0 0;         /* much smaller margin */
     color: #222222;
     max-width: 1100px;
-    padding-left: 20px;
+    padding-left: 25px;
 }
