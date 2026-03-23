@@ -232,3 +232,10 @@ button {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+.header-subtitle {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.65rem;
+    text-align: center;
+    margin: 12px 0 0 0;
+    color: #222222;
+}
