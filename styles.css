@@ -28,8 +28,11 @@ nav {
     font-family: 'Great Vibes', cursive;
     font-size: 2.35rem;
     color: #222222;
-    margin-left: auto;           /* ← this pushes the logo to the right */
-}ul { 
+    text-align: center;
+    max-width: 950px;
+    margin: 0 auto;
+}
+ul { 
     list-style: none; 
     display: flex; 
     gap: 28px; 
@@ -235,7 +238,7 @@ button {
     font-family: 'Great Vibes', cursive;
     font-size: 1.65rem;
     text-align: left;           /* ← changed from center */
-    margin: 5px auto 0;
+    margin: 12px auto 0;
     color: #222222;
     max-width: 1100px;
     padding-left: 20px;         /* aligns nicely under the logo */
