@@ -239,5 +239,5 @@ button {
     margin: 12px auto 0;
     color: #222222;
     max-width: 1100px;
-    padding-left: 20px;         /* aligns nicely under the logo */
+    padding-left: 5px;         /* aligns nicely under the logo */
 }
