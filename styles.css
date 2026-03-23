@@ -46,7 +46,7 @@ ul li a {
 }
 .hero {
     text-align: center;
-    padding: 80px 20px 40px;   /* reduced top & bottom padding */
+    padding: 80px 20px 20px;   /* reduced top & bottom padding */
     background: #ffffff;
 }
 .hero img.monogram {
@@ -131,12 +131,11 @@ button {
 }
 .content {
     max-width: 950px;
-    margin: 40px auto;
+    margin: 10px auto 40px auto;   /* much smaller top margin */
     padding: 0 40px;
     line-height: 1.8;
     font-size: 1.05rem;
 }
-
 .content ul {
     list-style-type: disc;
     padding-left: 40px;
@@ -241,5 +240,5 @@ button {
     margin: 8px 0 0 0;         /* much smaller margin */
     color: #222222;
     max-width: 1100px;
-    padding-left: 25px;
+    padding-left: 35px;
 }
