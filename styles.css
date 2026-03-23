@@ -24,13 +24,12 @@ nav {
     justify-content: space-between; 
     align-items: center; 
 }
-.logo-text { 
-    font-family: 'Great Vibes', cursive; 
-    font-size: 2.35rem; 
-    color: #222222; 
-    white-space: nowwrap;
-}
-ul { 
+.logo-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.35rem;
+    color: #222222;
+    margin-left: auto;           /* ← this pushes the logo to the right */
+}ul { 
     list-style: none; 
     display: flex; 
     gap: 28px; 
