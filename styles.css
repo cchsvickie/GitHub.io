@@ -10,7 +10,7 @@ body {
 }
 header { 
     background: #ffffff; 
-    padding: 20px 20px 30px;   /* slightly reduced top padding + added bottom padding to keep overall header height reasonable */
+    padding: 25px 20px; 
     border-bottom: 1px solid #eeeeee; 
     position: sticky; 
     top: 0; 
@@ -20,23 +20,27 @@ nav {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    flex-direction: column;      /* NEW: stacks logo above the nav links */
-    align-items: center;         /* NEW: centers logo + nav links horizontally */
-    gap: 25px;                   /* NEW: space between logo text and nav buttons — tweak this number to fine-tune vertical centering */
+    justify-content: space-between;     /* logo block on left, nav links on right */
+    align-items: center;               /* vertically centers the nav links with the logo block */
+}
+.logo-container {                      /* NEW wrapper — groups logo + subtitle together on the left */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;           /* keeps logo and subtitle left-aligned */
 }
 .logo-text {
     font-family: 'Great Vibes', cursive;
     font-size: 2.35rem;
     color: #222222;
-    text-align: center;
-    max-width: 950px;
-    margin: 0 auto;
+    text-align: left;                  /* changed from center */
+    margin: 0;
+    line-height: 1.1;
 }
 ul { 
     list-style: none; 
     display: flex; 
     gap: 28px; 
-    margin: 0 0 10px 0;   /* NEW: bottom margin creates breathing room before the subtitle */
+    margin: 0; 
     padding: 0; 
 }
 ul li a { 
@@ -46,7 +50,7 @@ ul li a {
 }
 .hero {
     text-align: center;
-    padding: 80px 20px 20px;   /* reduced top & bottom padding */
+    padding: 80px 20px 20px;   
     background: #ffffff;
 }
 .hero img.monogram {
@@ -131,7 +135,7 @@ button {
 }
 .content {
     max-width: 950px;
-    margin: 10px auto 40px auto;   /* much smaller top margin */
+    margin: 10px auto 40px auto;   
     padding: 0 40px;
     line-height: 1.8;
     font-size: 1.05rem;
@@ -171,7 +175,7 @@ button {
 }
 
 .boarding-list ul {
-    display: block !important!
+    display: block !important;
     list-style-type: disc;
     padding-left: 30px;
     margin: 0;
@@ -206,8 +210,12 @@ button {
 /* Mobile menu fix — no more horizontal scrolling on iPhone */
 @media (max-width: 768px) {
     nav {
-        /* flex-direction and align-items removed here because we now set them globally above */
+        flex-direction: column;
+        align-items: center;
         padding: 15px 0;
+    }
+    .logo-container {
+        align-items: center;           /* centers logo + subtitle on mobile */
     }
     ul {
         flex-direction: column;
@@ -227,16 +235,16 @@ button {
 
 .gallery-grid img {
     width: 100%;
-    height: 260px;           /* Medium size — all photos same height */
-    object-fit: cover;       /* Crops nicely so they all look uniform */
+    height: 260px;           
+    object-fit: cover;       
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .header-subtitle {
     font-family: 'Great Vibes', cursive;
     font-size: 1.20rem;
-    text-align: center;           /* changed to center so it sits nicely under the centered nav */
-    margin: 8px auto 0 auto;
+    text-align: left;                  /* changed from center */
+    margin: 5px 0 0 0;
     color: #222222;
-    max-width: 950px;             /* matches the logo's width */
+    max-width: none;                   /* no longer needs the wide max-width */
 }
