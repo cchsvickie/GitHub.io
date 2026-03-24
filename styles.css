@@ -36,7 +36,7 @@ ul {
     list-style: none; 
     display: flex; 
     gap: 28px; 
-    margin: 10; 
+    margin: 0; 
     padding: 0; 
 }
 ul li a { 
