@@ -22,7 +22,7 @@ nav {
     display: flex;
     flex-direction: column;      /* NEW: stacks logo above the nav links */
     align-items: center;         /* NEW: centers logo + nav links horizontally */
-    gap: 15px;                   /* NEW: space between logo text and nav buttons — tweak this number to fine-tune vertical centering */
+    gap: 25px;                   /* NEW: space between logo text and nav buttons — tweak this number to fine-tune vertical centering */
 }
 .logo-text {
     font-family: 'Great Vibes', cursive;
