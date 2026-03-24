@@ -1,4 +1,3 @@
-```css
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 body { 
@@ -11,18 +10,19 @@ body {
 }
 header { 
     background: #ffffff; 
-    padding: 25px 20px; 
+    padding: 20px 20px 30px;   /* slightly reduced top padding + added bottom padding to keep overall header height reasonable */
     border-bottom: 1px solid #eeeeee; 
     position: sticky; 
     top: 0; 
     z-index: 1000; 
 }
 nav { 
-    max-width: 1200px; 
-    margin: auto; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;      /* NEW: stacks logo above the nav links */
+    align-items: center;         /* NEW: centers logo + nav links horizontally */
+    gap: 15px;                   /* NEW: space between logo text and nav buttons — tweak this number to fine-tune vertical centering */
 }
 .logo-text {
     font-family: 'Great Vibes', cursive;
@@ -36,7 +36,7 @@ ul {
     list-style: none; 
     display: flex; 
     gap: 28px; 
-    margin: 0; 
+    margin: 0 0 10px 0;   /* NEW: bottom margin creates breathing room before the subtitle */
     padding: 0; 
 }
 ul li a { 
@@ -206,8 +206,7 @@ button {
 /* Mobile menu fix — no more horizontal scrolling on iPhone */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        align-items: center;
+        /* flex-direction and align-items removed here because we now set them globally above */
         padding: 15px 0;
     }
     ul {
@@ -236,7 +235,7 @@ button {
 .header-subtitle {
     font-family: 'Great Vibes', cursive;
     font-size: 1.20rem;
-    text-align: left;           /* now centered under the logo */
+    text-align: center;           /* changed to center so it sits nicely under the centered nav */
     margin: 8px auto 0 auto;
     color: #222222;
     max-width: 950px;             /* matches the logo's width */
