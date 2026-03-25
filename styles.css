@@ -242,12 +242,13 @@ button {
     max-width: 950px;             /* matches the logo's width */
 }
 .welcome-section {
-    padding: 70px 20px 100px;
-    max-width: 1200px;              /* ← MATCHES the header nav width exactly */
-    margin: 0 auto;
+    padding: 70px 20px 100px;     /* same 20px side padding as your header */
+    max-width: none;              /* removed max-width so it matches header structure */
 }
 
 .welcome-grid {
+    max-width: 1200px;            /* ← exact same width as your nav */
+    margin: 0 auto;               /* ← centers it exactly like the header logo */
     display: grid;
     grid-template-columns: 1fr 220px 1fr;
     gap: 65px;
@@ -260,7 +261,7 @@ button {
     line-height: 1.85;
     color: #222222;
     margin: 0;
-    text-align: justify;            /* ← Both paragraphs now fully justified */
+    text-align: justify;          /* both sides fully justified */
 }
 
 .welcome-monogram {
