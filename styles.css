@@ -242,62 +242,49 @@ button {
     max-width: 950px;             /* matches the logo's width */
 }
 .welcome-section {
-    padding: 70px 20px 90px;
+    padding: 70px 20px 100px;
     max-width: 1280px;
     margin: 0 auto;
 }
 
 .welcome-grid {
     display: grid;
-    grid-template-columns: 1fr 210px 1fr;   /* left text | monogram | right text */
-    gap: 55px;
-    align-items: flex-start;                /* keeps monogram vertically centered between the two text blocks */
+    grid-template-columns: 1fr 220px 1fr;   /* left text | tall monogram | right text */
+    gap: 60px;
+    align-items: flex-start;
 }
 
 .welcome-left p,
 .welcome-right p {
     font-size: 1.08rem;
-    line-height: 1.82;
+    line-height: 1.85;
     color: #222222;
     margin: 0;
 }
 
 .welcome-monogram {
     text-align: center;
-    padding-top: 10px;                      /* fine-tune vertical centering if needed */
+    padding-top: 8px;
 }
 
 .tall-monogram {
-    max-width: 195px;                       /* makes the monogram exactly the size and prominence shown in your picture */
+    max-width: 195px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-.full-logo-container {
-    text-align: center;
-    margin-top: 70px;                       /* spacing between the two text columns and the round logo */
-}
-
-.round-logo {
-    max-width: 340px;
-    height: auto;
-}
-
-/* ====================== MOBILE (stacks nicely, monogram moves to top) ====================== */
+/* Mobile: stacks everything nicely */
 @media (max-width: 992px) {
     .welcome-grid {
         grid-template-columns: 1fr;
-        gap: 45px;
+        gap: 50px;
     }
     .welcome-monogram {
-        order: -1;                          /* monogram appears first on mobile */
+        order: -1;
         padding-top: 0;
     }
     .tall-monogram {
-        max-width: 160px;
-    }
-    .full-logo-container {
-        margin-top: 50px;
+        max-width: 170px;
     }
 }
