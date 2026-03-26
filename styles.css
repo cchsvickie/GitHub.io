@@ -342,3 +342,9 @@ button {
         max-width: 170px;
     }
 }
+/* ====================== STAYING AT IMR PAGE – ALIGNED WITH HEADER ====================== */
+.staying-section {
+    padding: 85px 20px;      /* same side padding as your header */
+    max-width: 1200px;       /* ← THIS is what matches your nav exactly */
+    margin: 0 auto;
+}
