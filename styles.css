@@ -289,21 +289,25 @@ button {
     .tall-monogram {
         max-width: 170px;
     }
+/* ====================== STAYING AT IMR PAGE – FIXED LEFT ALIGNMENT WITH HEADER ====================== */
 .staying-section {
-    padding: 85px 20px;
-    max-width: 1100px;
+    padding: 85px 20px;           /* kept your original padding */
+    max-width: 950px;             /* ← THIS IS THE ONLY CHANGE NEEDED FOR PERFECT LEFT ALIGNMENT */
     margin: 0 auto;
 }
+
 .staying-section p {
     font-size: 1.05rem;
     line-height: 1.8;
 }
+
 .staying-section h2 {
     font-family: 'Great Vibes', cursive;
     font-size: 3.2rem;
     text-align: center;
     margin-bottom: 50px;
 }
+
 .feature-row {
     display: flex;
     gap: 60px;
@@ -311,17 +315,20 @@ button {
     margin-bottom: 70px;
     flex-wrap: wrap;
 }
+
 .feature-text {
     flex: 1;
     min-width: 300px;
     font-size: 1.05rem;
     line-height: 1.8;
 }
+
 .feature-text strong {
     display: block;
     margin-bottom: 8px;
     font-size: 1.15rem;
 }
+
 .feature-images {
     flex: 1;
     display: grid;
@@ -329,6 +336,7 @@ button {
     gap: 15px;
     min-width: 300px;
 }
+
 .feature-images img {
     width: 100%;
     height: 230px;
@@ -336,9 +344,18 @@ button {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+/* Mobile: stack text above images (your original) */
 @media (max-width: 768px) {
     .feature-row {
         flex-direction: column;
         gap: 30px;
+    }
+}
+
+/* Desktop: force images to stay on the right of the text (prevents them dropping underneath) */
+@media (min-width: 769px) {
+    .feature-row {
+        flex-wrap: nowrap;
     }
 }
