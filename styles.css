@@ -171,7 +171,7 @@ button {
 }
 
 .boarding-list ul {
-    display: block !important!
+    display: block !important;
     list-style-type: disc;
     padding-left: 30px;
     margin: 0;
