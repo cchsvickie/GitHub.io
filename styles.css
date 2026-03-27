@@ -244,8 +244,9 @@ button {
 }
 .welcome-section {
     padding: 70px 20px 100px;
+    max-width: 950px;          /* ← this is the key */
+    margin: 0 auto;            /* ← ADD THIS LINE (very important) */
 }
-
 .welcome-grid {
     max-width: 950px;            /* ← This matches your .logo-text max-width exactly */
     margin: 0 auto;              /* ← Centers the whole block the same way your logo is centered */
@@ -275,7 +276,13 @@ button {
     display: block;
     margin: 0 auto;
 }
-
+.welcome-below-image {
+    width: 100%;
+    display: block;
+    margin-top: 50px;                    /* spacing above the photo */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 /* Mobile: stacks everything nicely */
 @media (max-width: 992px) {
     .welcome-grid {
