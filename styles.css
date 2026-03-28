@@ -129,10 +129,28 @@ button {
 @media (max-width: 768px) { 
     .hero h1 { font-size: 3rem; } 
 }
+/* ====================== ABOUT IMR PAGE – TIGHTEN GAP ABOVE PHOTO ====================== */
+.about-section {
+    padding: 40px 20px 80px;     /* much smaller top padding */
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    margin-bottom: 25px;         /* tighter spacing under the title */
+}
+
+.about-section img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 .content {
+    padding: 40px 20px 80px;     /* much smaller top padding */
     max-width: 950px;
     margin: 10px auto 40px auto;   /* much smaller top margin */
-    padding: 0 40px;
     line-height: 1.8;
     font-size: 1.05rem;
 }
