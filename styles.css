@@ -133,7 +133,6 @@ button {
 .content {
     padding: 40px 20px 80px;     /* much smaller top padding */
     max-width: 950px;
-    /* margin: 10px auto 40px auto;    much smaller top margin */
     margin: 0 auto;
     line-height: 1.8;
     font-size: 1.05rem;
@@ -150,16 +149,16 @@ button {
     margin-bottom: 12px;
 }
 .boarding-section {
-    padding: 85px 20px;
-    max-width: 1100px;
-    margin: auto;
+    padding: 40px 20px 80px;     /* much smaller top padding */
+    max-width: 950px;
+    margin: 0 auto;
 }
 
 .boarding-section h2 {
     font-family: 'Great Vibes', cursive;
     font-size: 3.2rem;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .boarding-layout {
@@ -304,8 +303,8 @@ button {
 }
 /* ====================== STAYING AT IMR PAGE – FIXED LEFT ALIGNMENT WITH HEADER ====================== */
 .staying-section {
-    padding: 85px 20px;           /* kept your original padding */
-    max-width: 950px;             /* ← THIS IS THE ONLY CHANGE NEEDED FOR PERFECT LEFT ALIGNMENT */
+    padding: 40px 20px 80px;     /* much smaller top padding */
+    max-width: 950px;
     margin: 0 auto;
 }
 
@@ -318,7 +317,7 @@ button {
     font-family: 'Great Vibes', cursive;
     font-size: 3.2rem;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .feature-row {
