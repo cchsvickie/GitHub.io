@@ -277,9 +277,10 @@ button {
     margin: 0 auto;
 }
 .welcome-below-image {
-    width: 100%;
+    width: 100%;                    /* keeps it responsive */
+    max-width: 720px;               /* ← CHANGE THIS NUMBER to make it smaller or bigger */
     display: block;
-    margin-top: 50px;                    /* spacing above the photo */
+    margin: 50px auto 0 auto;       /* centers the picture + nice spacing above */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
