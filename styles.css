@@ -240,7 +240,7 @@ button {
     max-width: 950px;             /* matches the logo's width */
 }
 .welcome-section {
-    padding: 70px 20px 100px;
+    padding: 40px 20px 80px;
     max-width: 950px;          /* ← this is the key */
     margin: 0 auto;            /* ← ADD THIS LINE (very important) */
 }
