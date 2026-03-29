@@ -294,7 +294,7 @@ button {
 }
 /* ====================== STAYING AT IMR PAGE – FIXED LEFT ALIGNMENT WITH HEADER ====================== */
 .staying-section {
-    padding: 40px 20px 80px;     /* much smaller top padding */
+    padding: 20px 20px 80px;     /* much smaller top padding */
     max-width: 950px;
     margin: 0 auto;
 }
